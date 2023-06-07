@@ -1,0 +1,48 @@
+.wrapper {
+    @apply mx-auto max-w-7xl;
+}
+
+main {
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    p, ul, ol {
+        a {
+            @apply underline;
+
+            &:hover {
+                @apply no-underline;
+            }
+        }
+
+        @apply mb-8;
+    }
+}
+.wp-block-quote {
+    @apply pl-4 border-l-4 border-gray-400 border-y-0;
+}
+.wp-block-quote p {
+    @apply border-none;
+}
+.comments ul   {
+    @apply list-none;
+}
+
+label {
+    @apply block mb-2;
+}
+input.search-input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l-lg focus:ring-blue-500 focus:border-blue-500 block pl-4 p-2.5 inline w-auto min-w-[250px];
+}
+button.search-submit {
+    @apply bg-gray-50 -ml-2 border border-gray-300 text-gray-900 text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block px-5 py-2.5 inline w-auto bg-blue-600 hover:bg-blue-700 text-white; 
+}
